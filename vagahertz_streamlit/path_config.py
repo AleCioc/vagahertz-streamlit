@@ -16,3 +16,4 @@ root_data_public_path = os.path.join(
     "data_public"
 )
 statuto_path = os.path.join(root_data_public_path, "STATUTO_VAGAHERTZ.pdf")
+logo_path = os.path.join(root_data_public_path, "vagahertz-logo-0.jpg")
