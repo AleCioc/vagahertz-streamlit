@@ -1,0 +1,5 @@
+streamlit
+python-codicefiscale
+pandas
+qrcode
+pillow
