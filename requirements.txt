@@ -3,3 +3,5 @@ python-codicefiscale
 pandas
 qrcode
 pillow
+lxml
+openpyxl
