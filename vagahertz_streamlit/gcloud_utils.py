@@ -5,6 +5,8 @@ from google.cloud import storage
 
 from vagahertz_streamlit.path_config import *
 
+st.set_page_config('VagaHertz', initial_sidebar_state='collapsed')
+
 
 def store_json_key_from_env():
     """

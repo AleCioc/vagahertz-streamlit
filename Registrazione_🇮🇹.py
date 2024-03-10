@@ -8,6 +8,7 @@ from email_validator import validate_email
 from vagahertz_streamlit.gcloud_utils import *
 from vagahertz_streamlit.st_pages_utils import *
 
+
 st.markdown(
     """
     <style>
@@ -189,9 +190,9 @@ indirizzo_di_residenza = cols[0].text_input('Indirizzo di residenza')
 numero_civico_residenza = cols[1].text_input('Numero civico')
 cap_residenza = cols[2].text_input('CAP')
 
-cols_downloads = st.columns((1, 1), gap="small")
-
 st.header("Statuto e informativa privacy")
+
+cols_downloads = st.columns((1, 1), gap="small")
 
 pdf_file_content = get_pdf_file_content_as_base64(statuto_path)
 
