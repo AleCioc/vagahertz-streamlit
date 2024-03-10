@@ -192,6 +192,7 @@ cap_residenza = cols[2].text_input('CAP')
 cols_downloads = st.columns((1, 1), gap="small")
 
 cols_downloads[0].header("Statuto")
+cols_downloads[1].header("Informativa privacy")
 
 pdf_file_content = get_pdf_file_content_as_base64(statuto_path)
 
@@ -202,7 +203,6 @@ cols_downloads[0].download_button(
     mime="application/octet-stream"
 )
 
-cols_downloads[1].header("Informativa privacy")
 
 informativa_file_content = get_pdf_file_content_as_base64(informativa_path)
 
