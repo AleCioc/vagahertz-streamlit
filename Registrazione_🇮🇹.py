@@ -158,7 +158,7 @@ try:
 except:
     cols[0].warning("Formato codice fiscale non valido!")
 
-user_email = cols[1].text_input('Email dove verrà inviata la tessera digitale:')
+user_email = cols[1].text_input('Email')
 try:
     valid = validate_email(user_email)
     user_email = valid.normalized
@@ -193,6 +193,9 @@ cap_residenza = cols[2].text_input('CAP')
 st.header("Statuto e informativa privacy")
 
 cols_downloads = st.columns((1, 1), gap="small")
+
+cols_downloads[0].header("Statuto")
+cols_downloads[1].header("Informativa privacy")
 
 pdf_file_content = get_pdf_file_content_as_base64(statuto_path)
 
@@ -244,6 +247,8 @@ with st.form("user_registration_form"):
         if trattamento_dati_check and statuto_check\
                 and st.session_state["valid_codice_fiscale"] and st.session_state["valid_email"]:
 
+            user_code = "-".join([nome, cognome, codice_fiscale_inserito])
+
             user_info_dict = dict(
                 nome=nome,
                 cognome=cognome,
@@ -258,49 +263,79 @@ with st.form("user_registration_form"):
                 provincia_residenza=provincia_residenza,
                 comune_residenza=comune_residenza,
                 email=user_email,
-                codice_fiscale_calcolato=codice_fiscale_auto
+                codice_fiscale_calcolato=codice_fiscale_auto,
+                user_code=user_code
             )
 
-            st.session_state["user_info_dict"] = user_info_dict
+            valid_info = True
+            for k in user_info_dict:
+                if len(user_info_dict[k]) == 0:
+                    valid_info = False
 
-            user_code = "-".join([nome, cognome, codice_fiscale_inserito])
+            if valid_info:
 
-            user_unique_json_path = os.path.join(unique_users_json_path, user_code + ".json")
+                st.session_state["user_info_dict"] = user_info_dict
 
-            if not os.path.exists(user_unique_json_path):
+                user_unique_json_path = os.path.join(unique_users_json_path, user_code + ".json")
 
-                st.balloons()
+                blobs = list_blobs("vagahertz", "unique_users_json", storage_client)
+                blob_names = [blob.name.replace("unique_users_json/", "") for blob in blobs]
 
-                with open(user_unique_json_path, "w") as f:
-                    json.dump(st.session_state["user_info_dict"], f, indent=4)
+                if not user_code + ".json" in blob_names:
 
-                upload_blob(
-                    "vagahertz",
-                    user_unique_json_path,
-                    "unique_users_json/" + user_code + ".json",
-                    storage_client
-                )
+                    st.balloons()
 
-                img = qrcode.make(user_code)
-                img.save(os.path.join(unique_users_qrcode_path, user_code + ".png"))
+                    # with open(user_unique_json_path, "w") as f:
+                    #     json.dump(st.session_state["user_info_dict"], f, indent=4)
 
-                upload_blob(
-                    "vagahertz",
-                    os.path.join(unique_users_qrcode_path, user_code + ".png"),
-                    "unique_users_qrcode/" + user_code + ".png",
-                    storage_client
-                )
+                    # upload_blob(
+                    #     "vagahertz",
+                    #     user_unique_json_path,
+                    #     "unique_users_json/" + user_code + ".json",
+                    #     storage_client
+                    # )
 
-                st.image(os.path.join(unique_users_qrcode_path, user_code + ".png"))
+                    qrcode_user = qrcode.make(user_code)
+                    # qrcode_user.save(os.path.join(unique_users_qrcode_path, user_code + ".png"))
 
-                st.success("Utente " + user_code + " registrato con successo!")
-                st.success("Grazie per la registrazione!")
+                    upload_blob(
+                        "vagahertz",
+                        os.path.join(unique_users_qrcode_path, user_code + ".png"),
+                        "unique_users_qrcode/" + user_code + ".png",
+                        storage_client
+                    )
 
-                st.session_state["user_info_dict"] = None
+                    user_current_event_check_url = "https://vagahertz-backoffice.streamlit.app/Controlla_accesso?user_code=" + user_code
+                    qrcode_user_current_event = qrcode.make(user_current_event_check_url)
+                    qrcode_user_current_event.save(
+                        os.path.join(next_event_qrcode_path, user_code + ".png")
+                    )
+
+                    upload_blob(
+                        "vagahertz",
+                        os.path.join(unique_users_qrcode_path, user_code + ".png"),
+                        "events_access/non-solo-techno_2024-03-16/" + st.query_params["user_code"] + ".png",
+                        storage_client
+                    )
+
+                    st.success("Tessera registrata con successo!")
+                    st.success("Grazie per la registrazione!")
+
+                    st.subheader("QR code per l'evento")
+                    st.image(os.path.join(next_event_qrcode_path, user_code + ".png"))
+
+                    st.session_state["user_info_dict"] = None
+
+                else:
+
+                    st.error("Esiste già un utente registrato con questo codice fiscale!")
 
             else:
 
-                st.error("Esiste già un utente registrato con questo codice fiscale!")
+                st.error("Mmmm sembra che ci sia stato un errore.")
+                st.info("""
+                    Verifica di aver inserito tutti i dati correttamente.
+                """)
 
         else:
 
