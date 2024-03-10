@@ -189,33 +189,33 @@ indirizzo_di_residenza = cols[0].text_input('Indirizzo di residenza')
 numero_civico_residenza = cols[1].text_input('Numero civico')
 cap_residenza = cols[2].text_input('CAP')
 
-cols = st.columns((1, 1), gap="small")
+cols_downloads = st.columns((1, 1), gap="small")
 
-cols[0].header("Statuto")
+cols_downloads[0].header("Statuto")
 
 pdf_file_content = get_pdf_file_content_as_base64(statuto_path)
 
-cols[0].download_button(
+cols_downloads[0].download_button(
     label=":arrow_down: Clicca per scaricare lo statuto",
     data=pdf_file_content,
     file_name="STATUTO_VAGAHERTZ.pdf",
     mime="application/octet-stream"
 )
 
-cols[1].header("Informativa privacy")
+cols_downloads[1].header("Informativa privacy")
 
 informativa_file_content = get_pdf_file_content_as_base64(informativa_path)
 
-cols[1].download_button(
+cols_downloads[1].download_button(
     label=":arrow_down: Clicca per scaricare l'informativa privacy",
     data=informativa_file_content,
     file_name="INFORMATIVA_VAGAHERTZ.pdf",
     mime="application/octet-stream"
 )
 
-statuto_check = cols[0].checkbox("Confermo la presa visione dello statuto")
+statuto_check = cols_downloads[0].checkbox("Confermo la presa visione dello statuto")
 
-trattamento_dati_check = cols[1].checkbox(
+trattamento_dati_check = cols_downloads[1].checkbox(
     "Confermo la presa visione dell'informativa e acconsento al trattamento dati"
 )
 
