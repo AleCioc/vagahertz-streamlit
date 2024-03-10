@@ -143,6 +143,8 @@ dmypy.json
 
 # custom folders and files
 
-data
+data/*
+secrets/*
+pages_backup/*
 
 !data_public/Codici-statistici-e-denominazioni-al-01_01_2024.xlsx
