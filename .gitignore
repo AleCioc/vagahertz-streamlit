@@ -146,5 +146,6 @@ dmypy.json
 data/*
 secrets/*
 pages_backup/*
+.streamlit/secrets.toml
 
 !data_public/Codici-statistici-e-denominazioni-al-01_01_2024.xlsx

@@ -1,4 +1,6 @@
+import json
 import os
+import streamlit as st
 from google.cloud import storage
 
 from vagahertz_streamlit.path_config import *
@@ -9,11 +11,19 @@ def store_json_key_from_env():
     Reads the JSON key from the 'JSON_KEY_GCLOUD' environment variable and writes it to a file
     specified by the 'JSON_KEY_PATH' environment variable.
     """
-    json_key = os.getenv('JSON_KEY_GCLOUD').replace('\"', '"')
+    try:
+        json_key = st.secrets['JSON_KEY_GCLOUD']
+    except:
+        json_key = os.getenv('JSON_KEY_GCLOUD')
+
     if not json_key:
         raise ValueError("Environment variable 'JSON_KEY_GCLOUD' is not set.")
 
-    json_key_path = os.getenv('JSON_KEY_PATH')
+    try:
+        json_key_path = st.secrets['JSON_KEY_PATH']
+    except:
+        json_key_path = os.getenv('JSON_KEY_PATH')
+
     if not json_key_path:
         raise ValueError("Environment variable 'JSON_KEY_PATH' is not set.")
 
@@ -21,7 +31,7 @@ def store_json_key_from_env():
 
     # Writing the JSON key to the specified file path
     with open(json_key_path, 'w') as json_file:
-        json_file.write(json_key)
+        json_file.write(json.dumps(dict(json_key)))
 
     # print(f"JSON key is stored at {json_key_path}.")
 
