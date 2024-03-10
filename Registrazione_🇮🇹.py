@@ -286,8 +286,8 @@ with st.form("user_registration_form"):
 
                     st.balloons()
 
-                    # with open(user_unique_json_path, "w") as f:
-                    #     json.dump(st.session_state["user_info_dict"], f, indent=4)
+                    with open(user_unique_json_path, "w") as f:
+                        json.dump(st.session_state["user_info_dict"], f, indent=4)
 
                     upload_blob(
                         "vagahertz",
