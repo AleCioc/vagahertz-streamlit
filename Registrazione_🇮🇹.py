@@ -289,12 +289,12 @@ with st.form("user_registration_form"):
                     # with open(user_unique_json_path, "w") as f:
                     #     json.dump(st.session_state["user_info_dict"], f, indent=4)
 
-                    # upload_blob(
-                    #     "vagahertz",
-                    #     user_unique_json_path,
-                    #     "unique_users_json/" + user_code + ".json",
-                    #     storage_client
-                    # )
+                    upload_blob(
+                        "vagahertz",
+                        user_unique_json_path,
+                        "unique_users_json/" + user_code + ".json",
+                        storage_client
+                    )
 
                     qrcode_user = qrcode.make(user_code)
                     qrcode_user.save(os.path.join(unique_users_qrcode_path, user_code + ".png"))
