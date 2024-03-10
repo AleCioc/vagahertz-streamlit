@@ -18,6 +18,7 @@ def store_json_key_from_env():
         json_key = dict(st.secrets['JSON_KEY_GCLOUD'])
         for k in json_key:
             json_key[k] = json_key[k].replace("https=", "https:")
+        st.write(json_key)
     except:
         json_key = os.getenv('JSON_KEY_GCLOUD')
 
