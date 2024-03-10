@@ -192,10 +192,11 @@ cap_residenza = cols[2].text_input('CAP')
 
 st.header("Statuto e informativa privacy")
 
+st.write("Scarica statuto e informativa, prendi visione e acconsenti al trattamento dati.")
 cols_downloads = st.columns((1, 1), gap="small")
 
-cols_downloads[0].header("Statuto")
-cols_downloads[1].header("Informativa privacy")
+#cols_downloads[0].header("Statuto")
+#cols_downloads[1].header("Informativa privacy")
 
 pdf_file_content = get_pdf_file_content_as_base64(statuto_path)
 
@@ -314,7 +315,7 @@ with st.form("user_registration_form"):
                     upload_blob(
                         "vagahertz",
                         os.path.join(unique_users_qrcode_path, user_code + ".png"),
-                        "events_access/non-solo-techno_2024-03-16/" + st.query_params["user_code"] + ".png",
+                        "events_access/non-solo-techno_2024-03-16/" + user_code + ".png",
                         storage_client
                     )
 
