@@ -54,3 +54,5 @@ users_df = read_json_files_in_folder(
     "unique_users_json/",
     os.path.join(root_data_path, "temp.json")
 )
+
+users_df

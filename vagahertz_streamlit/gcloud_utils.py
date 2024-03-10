@@ -9,7 +9,7 @@ def store_json_key_from_env():
     Reads the JSON key from the 'JSON_KEY_GCLOUD' environment variable and writes it to a file
     specified by the 'JSON_KEY_PATH' environment variable.
     """
-    json_key = os.getenv('JSON_KEY_GCLOUD')
+    json_key = os.getenv('JSON_KEY_GCLOUD').replace('\"', '"')
     if not json_key:
         raise ValueError("Environment variable 'JSON_KEY_GCLOUD' is not set.")
 
