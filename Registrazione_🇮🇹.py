@@ -111,17 +111,17 @@ data_di_nascita = cols[1].date_input(
 )
 
 provinces_df = read_provinces()
-provinces_list = provinces_df.Codice.values
+provinces_list = sorted(provinces_df.Codice.dropna().values)
 
 italy_cities_names_df = read_excel_cities()
 
 provincia_di_nascita = cols[0].selectbox(
-    'Provincia di nascita', options=provinces_list, index=8
+    'Provincia di nascita', options=provinces_list, index=9
 )
-italy_province_cities_list = italy_cities_names_df.loc[
+italy_province_cities_list = sorted(italy_cities_names_df.loc[
     italy_cities_names_df["Sigla automobilistica"] == provincia_di_nascita,
     "Denominazione in italiano"
-].values
+].values)
 
 comune_di_nascita = cols[1].selectbox(
     'Comune di nascita', options=italy_province_cities_list
@@ -172,7 +172,7 @@ st.header("Residenza")
 cols = st.columns((1, 1), gap="small")
 
 provincia_residenza = cols[0].selectbox(
-    'Provincia di residenza', options=provinces_list, index=8
+    'Provincia di residenza', options=provinces_list, index=9
 )
 italy_province_cities_list_ = italy_cities_names_df.loc[
     italy_cities_names_df["Sigla automobilistica"] == provincia_residenza,
