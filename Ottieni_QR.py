@@ -10,18 +10,12 @@ st.title('Ottieni QR')
 storage_client = initialize_storage_client(store_json_key_from_env())
 blobs = storage_client.list_blobs("vagahertz")
 
-def load_data():
+users_df = read_json_files_in_folder(
+    "vagahertz",
+    "unique_users_json",
+    storage_client
+)
 
-    _users_df = read_json_files_in_folder(
-        "vagahertz",
-        "unique_users_json",
-        storage_client
-    )
-
-    return _users_df
-
-
-users_df = load_data()
 
 user_email = st.text_input("Inserisci il tuo indirizzo email:")
 user_codice_fiscale = st.text_input("Inserisci il tuo codice fiscale")
