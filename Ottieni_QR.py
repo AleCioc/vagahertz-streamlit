@@ -33,9 +33,8 @@ if button_check:
     user_code = users_df.loc[users_df.codice_fiscale == user_codice_fiscale, "user_code"]
     if user_email in users_df.email.values and user_codice_fiscale in users_df.codice_fiscale.values:
         user_code = users_df.loc[users_df.codice_fiscale == user_codice_fiscale, "user_code"].values[0]
-        st.success("Sei qui")
-        st.subheader("Ecco il tuo QR code per l'evento")
-        st.write(user_email)
+        user_real_name = users_df.loc[users_df.codice_fiscale == user_codice_fiscale, "nome"].values[0]
+        st.subheader("Ciao {}, ecco il tuo QR code per Non Solo Techno!".format(user_real_name))
         read_user_event_qrcode(
             "vagahertz",
             "events_access/non-solo-techno_2024-03-16/",
