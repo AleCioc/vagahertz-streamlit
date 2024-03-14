@@ -20,9 +20,9 @@ users_df = read_json_files_in_folder(
 user_email = st.text_input("Inserisci il tuo indirizzo email:")
 user_codice_fiscale = st.text_input("Inserisci il tuo codice fiscale")
 
-button_check = st.button("Clicca per ottenere QR code")
+# button_check = st.button("Clicca per ottenere QR code")
 
-if button_check:
+if True:
     cols = st.columns((1, 1))
     user_code = users_df.loc[users_df.codice_fiscale == user_codice_fiscale, "user_code"]
     if user_email in users_df.email.values and user_codice_fiscale in users_df.codice_fiscale.values:
