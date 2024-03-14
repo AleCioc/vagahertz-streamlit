@@ -111,53 +111,87 @@ data_di_nascita = cols[1].date_input(
     value=datetime.date(2000, 1, 1)
 )
 
-provinces_df = read_provinces()
-provinces_list = sorted(provinces_df.Codice.dropna().values)
-
-italy_cities_names_df = read_excel_cities()
-
-provincia_di_nascita = cols[0].selectbox(
-    'Provincia di nascita', options=provinces_list, index=9
-)
-italy_province_cities_list = sorted(italy_cities_names_df.loc[
-    italy_cities_names_df["Sigla automobilistica"] == provincia_di_nascita,
-    "Denominazione in italiano"
-].values)
-
-comune_di_nascita = cols[1].selectbox(
-    'Comune di nascita', options=italy_province_cities_list
-)
-
-codice_fiscale_inserito = cols[0].text_input('Codice fiscale')
-
+import pycountry
 from codicefiscale import codicefiscale
 from fuzzywuzzy import fuzz
 
-try:
-    codice_fiscale_auto = codicefiscale.encode(
-        lastname=cognome,
-        firstname=nome,
-        gender="M",
-        birthdate=str(data_di_nascita),
-        birthplace=comune_di_nascita,
+# Generating a list of country names
+countries = [country.name for country in pycountry.countries]
+
+# Creating a select box widget for country selection
+selected_country = cols[0].selectbox('Nazionalità:', countries, index=countries.index("Italy"))
+
+cols = st.columns((1, 1), gap="small")
+
+if selected_country == "Italy":
+
+    provinces_df = read_provinces()
+    provinces_list = sorted(provinces_df.Codice.dropna().values)
+
+    italy_cities_names_df = read_excel_cities()
+
+    provincia_di_nascita = cols[0].selectbox(
+        'Provincia di nascita', options=provinces_list, index=9
+    )
+    italy_province_cities_list = sorted(italy_cities_names_df.loc[
+        italy_cities_names_df["Sigla automobilistica"] == provincia_di_nascita,
+        "Denominazione in italiano"
+    ].values)
+
+    comune_di_nascita = cols[1].selectbox(
+        'Comune di nascita', options=italy_province_cities_list
     )
 
-    # st.text_input("Codice fiscale calcolato (modifica se ci sono errori): ", value=codice_fiscale_auto)
+    codice_fiscale_inserito = cols[0].text_input('Codice fiscale')
 
-except:
+    try:
 
-    codice_fiscale_auto = None
+        codice_fiscale_auto = codicefiscale.encode(
+            lastname=cognome,
+            firstname=nome,
+            gender="M",
+            birthdate=str(data_di_nascita),
+            birthplace=comune_di_nascita,
+        )
 
-try:
-    # st.info("Codice fiscale calcolato: " + codice_fiscale_auto)
-    # st.write(fuzz.ratio(codice_fiscale_inserito.lower(), codice_fiscale_auto.lower()))
-    assert fuzz.ratio(codice_fiscale_inserito.lower(), codice_fiscale_auto.lower()) > 80
-    assert validate_codice_fiscale(codice_fiscale_inserito)
-    assert not contains_lowercase(codice_fiscale_inserito)
-    st.session_state["valid_codice_fiscale"] = True
-    cols[0].success("Formato codice fiscale valido!")
-except:
-    cols[0].warning("Formato codice fiscale non valido!")
+        # st.text_input("Codice fiscale calcolato (modifica se ci sono errori): ", value=codice_fiscale_auto)
+
+    except:
+
+        codice_fiscale_auto = None
+
+    try:
+        # st.info("Codice fiscale calcolato: " + codice_fiscale_auto)
+        # st.write(fuzz.ratio(codice_fiscale_inserito.lower(), codice_fiscale_auto.lower()))
+        assert fuzz.ratio(codice_fiscale_inserito.lower(), codice_fiscale_auto.lower()) > 80
+        assert validate_codice_fiscale(codice_fiscale_inserito)
+        assert not contains_lowercase(codice_fiscale_inserito)
+        st.session_state["valid_codice_fiscale"] = True
+        cols[0].success("Formato codice fiscale valido!")
+    except:
+        cols[0].warning("Formato codice fiscale non valido!")
+
+else:
+
+    provincia_di_nascita = cols[0].text_input(
+        'Eventuale stato/provincia di nascita'
+    )
+
+    comune_di_nascita = cols[1].text_input(
+        'Città di nascita'
+    )
+
+    codice_fiscale_inserito = cols[0].text_input('Codice fiscale', help="Se non lo possiedi inserisci email anche qui")
+    codice_fiscale_auto = codice_fiscale_inserito
+    try:
+        assert fuzz.ratio(codice_fiscale_inserito.lower(), codice_fiscale_auto.lower()) > 80
+        assert len(codice_fiscale_inserito)
+        #assert validate_codice_fiscale(codice_fiscale_inserito)
+        #assert not contains_lowercase(codice_fiscale_inserito)
+        st.session_state["valid_codice_fiscale"] = True
+        cols[0].success("Formato valido!")
+    except:
+        cols[0].warning("Formato non valido!")
 
 user_email = cols[1].text_input('Email')
 try:
@@ -172,17 +206,12 @@ st.header("Residenza")
 
 cols = st.columns((1, 1), gap="small")
 
-provincia_residenza = cols[0].selectbox(
-    'Provincia di residenza', options=provinces_list, index=9
+provincia_residenza = cols[0].text_input(
+    'Provincia di residenza'
 )
-italy_province_cities_list_ = italy_cities_names_df.loc[
-    italy_cities_names_df["Sigla automobilistica"] == provincia_residenza,
-    "Denominazione in italiano"
-].values
 
-comune_residenza = cols[1].selectbox(
+comune_residenza = cols[1].text_input(
     'Comune di residenza',
-    options=italy_province_cities_list_
 )
 
 cols = st.columns((4, 1, 1), gap="small")
