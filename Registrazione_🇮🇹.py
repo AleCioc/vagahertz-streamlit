@@ -8,6 +8,7 @@ from email_validator import validate_email
 from vagahertz_streamlit.gcloud_utils import *
 from vagahertz_streamlit.st_pages_utils import *
 
+st.set_page_config(page_title="Registrazione")
 
 st.markdown(
     """
@@ -265,7 +266,7 @@ with st.form("user_registration_form"):
                 comune_residenza=comune_residenza,
                 email=user_email,
                 codice_fiscale_calcolato=codice_fiscale_auto,
-                user_code=user_code
+                user_code=user_code,
             )
 
             valid_info = True
@@ -306,7 +307,7 @@ with st.form("user_registration_form"):
                         storage_client
                     )
 
-                    user_current_event_check_url = "https://vagahertz-backoffice.streamlit.app/Controlla_accesso?user_code=" + user_code
+                    user_current_event_check_url = "https://nonsolotechno-check.streamlit.app?user_code=" + user_code
                     qrcode_user_current_event = qrcode.make(user_current_event_check_url)
                     qrcode_user_current_event.save(
                         os.path.join(next_event_qrcode_path, user_code + ".png")
@@ -314,7 +315,7 @@ with st.form("user_registration_form"):
 
                     upload_blob(
                         "vagahertz",
-                        os.path.join(unique_users_qrcode_path, user_code + ".png"),
+                        os.path.join(next_event_qrcode_path, user_code + ".png"),
                         "events_access/non-solo-techno_2024-03-16/" + user_code + ".png",
                         storage_client
                     )
@@ -322,8 +323,8 @@ with st.form("user_registration_form"):
                     st.success("Tessera registrata con successo!")
                     st.success("Grazie per la registrazione!")
 
-                    st.subheader("QR code per l'evento")
-                    st.image(os.path.join(next_event_qrcode_path, user_code + ".png"))
+                    # st.subheader("QR code per l'evento")
+                    # st.image(os.path.join(next_event_qrcode_path, user_code + ".png"))
 
                     st.session_state["user_info_dict"] = None
 
