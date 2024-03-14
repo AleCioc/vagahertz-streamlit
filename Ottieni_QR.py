@@ -23,8 +23,6 @@ def load_data():
 
 users_df = load_data()
 
-users_df[["nome", "cognome", "email", "codice_fiscale"]]
-
 user_email = st.text_input("Inserisci il tuo indirizzo email:")
 user_codice_fiscale = st.text_input("Inserisci il tuo codice fiscale")
 
@@ -33,11 +31,10 @@ button_check = st.button("Clicca per ottenere QR code")
 if button_check:
     cols = st.columns((1, 1))
     user_code = users_df.loc[users_df.codice_fiscale == user_codice_fiscale, "user_code"]
-    st.write(user_code)
     if user_email in users_df.email.values and user_codice_fiscale in users_df.codice_fiscale.values:
         user_code = users_df.loc[users_df.codice_fiscale == user_codice_fiscale, "user_code"].values[0]
         st.success("Sei qui")
-        st.subheader("Ottieni QR accesso")
+        st.subheader("Ecco il tuo QR code per l'evento")
         st.write(user_email)
         read_user_event_qrcode(
             "vagahertz",

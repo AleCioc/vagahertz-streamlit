@@ -20,6 +20,7 @@ with st.expander("Guarda registro completo"):
 
 st.header("Pagamento tessera")
 
+st.subheader("Convalidare il QR code per Non Solo Techno DOPO che il pagamento tessera + evento è stato effettuato!")
 
 st.header("Non Solo Techno")
 
