@@ -37,7 +37,7 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
         else:
             return "Country not found or ambiguous city name provided."
 
-    users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) > 2), "nazione_di_nascita"] = \
+    users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) > 2), "nazione_di_nascita_auto"] = \
         users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) > 2), "luogo_di_nascita"].apply(
             get_country_from_city
         )
