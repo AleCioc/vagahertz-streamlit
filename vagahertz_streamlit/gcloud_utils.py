@@ -3,8 +3,10 @@ import os
 import time
 
 import streamlit as st
-import pandas as pd
+
 from google.cloud import storage
+import pandas as pd
+from io import StringIO
 
 from vagahertz_streamlit.path_config import *
 
@@ -92,7 +94,7 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name, storage_cl
     print(f"File {source_file_name} uploaded to {destination_blob_name}.")
 
 
-def read_json_files_in_folder(bucket_name, folder_name, storage_client):
+def create_users_df_from_json_files(bucket_name, folder_name, storage_client):
     blobs = list_blobs(bucket_name, folder_name, storage_client)
     json_data_list = []
     for blob in blobs:
@@ -101,6 +103,7 @@ def read_json_files_in_folder(bucket_name, folder_name, storage_client):
             download_blob(bucket_name, blob.name, local_file_path, storage_client)
             with open(local_file_path, 'r') as json_file:
                 json_data = json.load(json_file)
+                json_data["registration_timestamp_utc"] = blob.time_created
                 json_data_list.append(json_data)
             os.remove(local_file_path)
     df = pd.DataFrame(json_data_list)
@@ -118,4 +121,15 @@ def read_user_event_qrcode(bucket_name, folder_name, blob_name, storage_client):
             st.image(local_file_path)
             os.remove(local_file_path)
     df = pd.DataFrame(json_data_list)
+    return df
+
+
+
+
+def read_csv_from_gcs_private_bucket(storage_client, bucket_name, object_name):
+    bucket = storage_client.bucket(bucket_name)
+    blob = bucket.blob(object_name)
+    data_string = blob.download_as_string()
+    string_io_data = StringIO(data_string.decode('utf-8'))
+    df = pd.read_csv(string_io_data)
     return df

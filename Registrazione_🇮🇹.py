@@ -283,6 +283,7 @@ with st.form("user_registration_form"):
             user_info_dict = dict(
                 nome=nome,
                 cognome=cognome,
+                #main_nationality=selected_country,
                 data_di_nascita=data_di_nascita.__str__(),
                 provincia_di_nascita=provincia_di_nascita,
                 luogo_di_nascita=comune_di_nascita,

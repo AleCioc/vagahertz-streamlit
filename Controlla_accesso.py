@@ -24,10 +24,10 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
 
         blobs = list_blobs("vagahertz", "unique_users_json", storage_client)
 
-        users_df = read_json_files_in_folder(
+        users_df = read_csv_from_gcs_private_bucket(
+            storage_client,
             "vagahertz",
-            "unique_users_json",
-            storage_client
+            "users_df.csv",
         )
 
         st.subheader("Lista tessere")
@@ -43,7 +43,7 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
             storage_client
         )
 
-        event_users_df = read_json_files_in_folder(
+        event_users_df = create_users_df_from_json_files(
             "vagahertz",
             "events_access/non-solo-techno_2024-03-16/",
             storage_client
@@ -57,6 +57,7 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
 
         if "user_code" not in st.query_params:
             st.warning("Inserisci un codice utente nell' URL per verificare l'accesso")
+
         if st.query_params["user_code"] in users_df.user_code.values:
             if st.query_params["user_code"] not in event_users_df.user_code.values:
                 with open(os.path.join(root_data_path, "check_" + st.query_params["user_code"] + ".json"), "w") as f:
