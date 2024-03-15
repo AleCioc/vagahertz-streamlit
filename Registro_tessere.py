@@ -23,7 +23,7 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
         "unique_users_json",
         storage_client
     )
-    users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) == 2), "nazione_di_nascita"] = "Italia"
+    users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) == 2), "nazione_di_nascita_auto"] = "Italia"
 
     from geopy.geocoders import Nominatim
 

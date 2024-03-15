@@ -1,0 +1,153 @@
+registration_timestamp_utc,sequenziale_tessera,nome,cognome,codice_fiscale_sistema,email_sistema,data_di_nascita,provincia_di_nascita,luogo_di_nascita,sesso_di_nascita,nazione_di_nascita,nazione_di_nascita_auto,indirizzo_di_residenza,numero_civico_residenza,cap_residenza,provincia_residenza,comune_residenza
+2024-03-14 08:15:15.717000+00:00,1,Alessandro,Ciociola,CCLLSN93M25A048Y,alessandro@ciociola.me,1993-08-25,BA,Acquaviva delle Fonti,Maschio,Italia,,Via Bernardo Terio,3,70023,BA,Gioia del Colle
+2024-03-14 09:03:34.112000+00:00,2,Fabrizio,Ragone,RGNFRZ97B11C975O,fabri.ragone@gmail.com,1997-02-11,BA,Conversano,Maschio,Italia,,Via L il Magnifico ,54/D,70014,BA,Conversano
+2024-03-14 09:18:37.882000+00:00,3,Angelica,Dormio,DRMNLC00L52H096E,angelicadormio00@gmail.com,2000-07-12,BA,Putignano,Femmina,Italia,,Contrada Sant’Oceano,43A,70043,BA,Monopoli
+2024-03-14 10:05:49.561000+00:00,4,Mariateresa ,Linsalata ,LNSMTR90R51A662C,MARIATERESALINSALATA@gmail.com,1990-10-11,BA,Bari,Femmina,Italia,,Viale Alcide De Gasperi,17,70018,BA,Rutigliano
+2024-03-14 10:29:40.813000+00:00,5,Walter,Liuzzi,LZZWTR98S08H096P,Walter_liuzzi98@hotmail.it,1998-11-08,BA,Putignano,Maschio,Italia,,Via Verdi ,22,70014,BA,Conversano
+2024-03-14 11:42:54.522000+00:00,6,Mariami,Kiparoidze,KPRMRM01R68Z254G,Kiparoidzemariami83@gmail.com,2001-10-28,Tbilisi,Tbilisi ,Femmina,,საქართველო,Via Giuseppe Verdi ,22,70014,Bari,CONVERS 
+2024-03-14 18:19:36.213000+00:00,7,Olesya,Turchik,TRCLSY99R71Z154L,alysaturchik@gmail.com,2000-01-31,Federazione Russa,Omsk,Femmina,,Россия,Via Francesco Crispi 17,70014,70014,Bari,Conversano
+2024-03-15 10:48:01.467000+00:00,8,Nico ,Fico,FCINCL94H22A488S,nicoficus@gmail.com,1994-06-22,TE,Atri,Non specificato,Italia,,Secciola,Snc,64100,Teramo,Teramo
+2024-03-15 12:35:28.781000+00:00,9,Gianmarco,Palazzo,PLZGMR93B05H096R,gianmarco.palazzo@gmail.com,1993-02-05,BA,Putignano,Non specificato,Italia,,via vecchia noci ,42,70010,BA,TURI
+2024-03-15 13:30:48.970000+00:00,10,Mariasofia,Tuccillo ,TCCMSF04M49A048S,tuccillomariasofia@gmail.com,2004-08-09,BA,Acquaviva delle Fonti,Femmina,Italia,,Via Catapano,7,70023,Bari ,Gioia del Colle
+2024-03-15 13:38:44.522000+00:00,11,Nunzio,Lazazzara,LZZNNZ97P09I330Z,tuzzo97@hotmail.it,1997-09-09,BA,Santeramo in Colle,Maschio,Italia,,Via Padre Erasmo Perniola,12/19,70029,Bari,Santeramo in colle
+2024-03-15 13:38:44.786000+00:00,12,Michele,Pazienza,PZNMHL03C07A662K,michelepazienza@outlook.it,2003-03-07,BA,Bari,Maschio,Italia,,Via Torquato Tasso,55,70032,Bari,Bitonto
+2024-03-15 13:38:48.273000+00:00,13,donato,babbo,BBBDNT03R01H096J,dona.babbo@gmail.com,2003-10-01,BA,Putignano,Maschio,Italia,,via giotto,8,70014,bari,conversano
+2024-03-15 13:39:09.247000+00:00,14,Dalila ,Raimondi,RMNDLL01L50L425B,raimondidalila373@gmail.com,2001-07-10,BA,Triggiano,Femmina,Italia,,viale Della Costituzione ,18,70012,bari,Noicattaro 
+2024-03-15 13:39:34.172000+00:00,15,Giovanni,Cusumano,CSMGNN03C25A662A,jo.cusu8@gmail.com,2003-03-25,BA,Bari,Maschio,Italia,,Via Re Manfredi ,41,70032,Bari,Bitonto 
+2024-03-15 13:39:44.350000+00:00,16,Ilaria ,Lonardelli ,LNRLRI02P68L109L,ilarialonardelli@gmail.com,2002-09-28,BA,Terlizzi,Femmina,Italia,,Via Riccio da Parma ,5/B,70038,BA,Terlizzi
+2024-03-15 13:46:59.521000+00:00,17,Doriana ,Esposito ,SPSDNR03A57C975T,Doriana.esposito01@gmail.com,2003-01-17,BA,Conversano,Femmina,Italia,,Via romanelli ,65,70044,Bari,Polignano a Mare 
+2024-03-15 13:47:08.773000+00:00,18,Giuseppe,Pastore,PSTGPP02B08L109J,daloggzw02@gmail.com,2002-02-08,BA,Terlizzi,Maschio,Italia,,Via Scipione Crisanzio ,139,70100,Bari,Bari
+2024-03-15 13:47:35.379000+00:00,19,Claudio ,Coppola,CPPCLD01P21C975E,claudioyt01@gmail.com,2001-09-21,BA,Conversano,Maschio,Italia,,Via fratelli melillo ,22,70014,Bari,Conversano
+2024-03-15 13:48:16.902000+00:00,20,Vincenzo Alessandro,Di Pierro ,DPRVCN99T03A8U3K,vinrar333@gmail.com,1999-12-03,BA,Bari,Maschio,Italia,,Via Padre Pio da Pietrelcina ,1/D,76011,BAT,Bisceglie
+2024-03-15 13:48:54.351000+00:00,21,Michael ,Olimpio ,LMPMHL00E05G187J,molimpio644@gmail.com,2000-05-05,BR,Brindisi,Maschio,Italia,,Via Botticelli,39,72019,Brindisi ,San Vito Dei Normanni 
+2024-03-15 13:50:21.687000+00:00,22,Wilson,Amorese,MRSWSN04R02Z602B,wilsonamorese7@gmail.com,2004-10-02,EE,Franca,Maschio,Italia,,Strada esterna parete di tulio ,2,70033,Bari,Corato
+2024-03-15 13:51:12.617000+00:00,23,Letizia ,Modeo,MDOLTZ03S44E882R,modeoletizia03@gnail.com,2003-11-04,TA,Manduria,Femmina,Italia,,Via castelli ,83,74024,Taranto,Manduria
+2024-03-15 13:53:10.498000+00:00,24,Angela ,Azzone ,ZZNNGL98M66A662T,azzone98@icloud.com,1998-08-26,BA,Bari,Femmina,Italia,,via Grazia Deledda ,13,70010,Bari,Casamassima 
+2024-03-15 13:53:22.326000+00:00,25,Sebastiano,Chieppa,CHPSST02D05A285J,sebachi02@gmail.com,2002-04-05,BA,Bari,Maschio,Italia,,Vi scipione crisanzio,139,70100,Ba,Bari
+2024-03-15 13:53:32.830000+00:00,26,Felicia,Flores,FLRFLC01L47B180C,Floresfelicia233@gmail.com,2001-07-07,BR,Brindisi,Femmina,Italia,,Via Romolo,72,72100,Brindisi,Brindisi
+2024-03-15 13:53:38.781000+00:00,27,Larisa ,Lupulescu,Lpllsr03h46z129v,Larisa.05@libero.it,2003-06-06,Lugoj,Lugoj,Femmina,,România,Via corona ,71,71121,Foggia,Fg
+2024-03-15 13:54:38.375000+00:00,28,Miki,Stramaglia,STRMKI98P11H096W,Miki_stramaglia@libero.it,1998-09-11,BA,Putignano,Maschio,Italia,,Via Adamo ,24,70017,Bari,Putignano 
+2024-03-15 13:54:58.040000+00:00,29,Ubaldo,Leporale,LPRBLD89B11H096S,ubaldo.leporale@gmail.com,1989-02-11,BA,Putignano,Maschio,Italia,,Via Convento,211,70020,Bari,Cassano delle Murge
+2024-03-15 13:55:21.933000+00:00,30,Daniele ,costante,CSTCMN97L05A048J,danielecostante1@gmail.com,1996-07-05,BA,Acquaviva delle Fonti,Maschio,Italia,,Bentivogli 11,11,40138,Bologna,Bologna
+2024-03-15 13:56:58.243000+00:00,31,Francesco,Sorressa,SRRFNC01L25C975Y,francescosorressa6@gmail.com,2001-07-25,BA,Conversano,Maschio,Italia,,Via Cesare abba ,22,70014,Bari ,Conversano
+2024-03-15 13:58:35.664000+00:00,32,Greta,Azzarri,ZZRGRT01R44G274J,greta.azzarri04@gmail.com,2001-10-04,RM,Palestrina,Femmina,Italia,,Via le mura ,23,00038,Roma,Valmontone
+2024-03-15 13:58:38.049000+00:00,33,Rosanna,Flores ,FLRRNN97P62B180E,rosannaflores_97@libero.it,1997-09-22,BR,Brindisi,Femmina,Italia,,Via Romolo,72,72100,Brindisi,Brindisi 
+2024-03-15 14:00:00.273000+00:00,34,Francesco ,Grassi,GRSFNC00L21D508J,Francesco00grassi@gmail.com,2000-07-21,BA,Acquaviva delle Fonti,Maschio,Italia,,Via costa ,129,72015,Brindisi,Fasano
+2024-03-15 14:00:07.947000+00:00,35,Giovanni,Dituri,DTRGNN95B05L425R,diturigiovanni896@gmail.com,1995-02-05,BA,Triggiano,Maschio,Italia,,Via N. Sauro,26,70018,Bari,Rutigliano
+2024-03-15 14:00:16.713000+00:00,36,Stefania ,Lippolis,LPPSFN00M42H096W,steff2800@gmail.com,2000-08-02,BA,Putignano,Femmina,Italia,,S.c. Monterosso,40,70017,Bari,Putignano 
+2024-03-15 14:00:44.020000+00:00,37,Giada,Carrieri,CRRGDI05R57A048H,giadinac17@gmail.com,2005-10-17,BA,Acquaviva delle Fonti,Femmina,Italia,,Via Monsignor Olindo Ruggieri ,5/D,74015,Taranto,Martina Franca 
+2024-03-15 14:01:11.883000+00:00,38,flavia,ceglie,CGLFLV04P67H096E,flaviaceglie65@gmail.com,2004-09-27,BA,Putignano,Femmina,Italia,,via dei peuceti ,180/P,70023,bari ,gioia del colle
+2024-03-15 14:03:59.572000+00:00,39,Michele ,Giove,GVIMHL04R23A048L,michelegiove004@gmail.com,2004-10-23,BA,Acquaviva delle Fonti,Maschio,Italia,,Via Altamura,88,70029,Bari,Santeramo in Colle
+2024-03-15 14:05:51.361000+00:00,40,Dario ,Ciavarella,CVRDRA02P03A662G,dariociava02@gmail.com,2002-09-03,BA,Bari,Maschio,Italia,,Via fiume ,16,70016,Ba,Noicattaro 
+2024-03-15 14:07:51.383000+00:00,41,Cinzia,Masi,MSACNZ04S68H096C,Cinziamasi28@gmail.com,2004-11-28,BA,Putignano,Femmina,Italia,,Viale del porcile,850,70023,Bari,Gioia del colle
+2024-03-15 14:09:01.362000+00:00,42,Alba ,Serra,SRRLBA98S50E977O,abla.arres.98@gmail.com,1998-11-10,PZ,Marsicovetere,Femmina,Italia,,Via Leonardo Sinisgalli ,2,85050,Marsicovetere ,Marsicovetere 
+2024-03-15 14:09:32.727000+00:00,43,sere,tatulli,TTLSRN05M68A048T,serenatatulli28@gmail.com,2005-08-28,BA,Acquaviva delle Fonti,Femmina,Italia,,padre Erasmo Perniola ,5/16,70029,Bari,Santeramo in colle 
+2024-03-15 14:09:32.883000+00:00,44,Nicolas ,Ferri ,FRRNLS01C21F052U,nicolas9004@gmail.com,2001-03-21,MT,Matera,Maschio,Italia,,Via castello ,21,75100,Matera ,Matera
+2024-03-15 14:10:54.434000+00:00,45,Luca,Notarniciola ,NTRLCU96E15C134R,luswark@gmail.com,1996-05-15,BA,Castellana Grotte,Maschio,Italia,,S.c. Scamardella ,37,70013,Bari ,Castellana Grotte 
+2024-03-15 14:14:31.461000+00:00,46,Alessandro,Pepe,PPELSN98S20E223V,kayn66@outlook.it,1998-11-20,BA,Grumo Appula,Maschio,Italia,,Via Piave ,9,70020,BARI ,Bitetto
+2024-03-15 14:15:45.792000+00:00,47,Michele Mika Juri,Liturri,LTRMHL96H26F915Q,michelemikajuriliturri@gmail.com,1996-06-26,BA,Noci,Maschio,Italia,,Via A.B. Sabin ,21,70044,BA,Polignano a mare
+2024-03-15 14:16:24.932000+00:00,48,Andrea,Gnoni,GNNNDR99E25B506M,andreagnoni0@gmail.com,1999-05-25,LE,Campi Salentina,Maschio,Italia,,Via Tommaso Storelli ,4,70124,Bari,Bari
+2024-03-15 14:16:39.182000+00:00,49,Rosalba,Lafirenza ,LFRRLB99L41A048X,rony12@libero.it,1999-07-01,BA,Acquaviva delle Fonti,Femmina,Italia,,Cisterne,23,70010,Bari,Casamassima
+2024-03-15 14:19:28.189000+00:00,50,Sergio ,Ferialdi ,FRLSRG81R07H096N,s.ferialdi@gmail.com,1981-10-07,BA,Putignano,Maschio,Italia,,Via s. Francesco 4 ,4,70011,Bari,Alberobello
+2024-03-15 14:20:03.254000+00:00,51,Roberto,Sciannamblo ,SCNRRT01S30A662S,Robertoscia01@gmail.com,2001-11-30,BA,Bari,Maschio,Italia,,Via Padre Michele Accolti Gil,22,70014,BA,Conversano 
+2024-03-15 14:24:21.684000+00:00,52,Ivan,Notarnicola,NTRVNI04M07E986C,Ivan.notarnick@icloud.com,2004-08-07,TA,Martina Franca,Maschio,Italia,,Via G inzucchi ,46,70013,Bari,Castellana Grotte
+2024-03-15 14:24:51.648000+00:00,53,Simona ,Loconsole ,LCNSMN89P44A662P,Minnyper@gmail.com,1989-09-04,BA,Bari,Femmina,Italia,,Corso Alcide De Gasperi ,327,70125,Bari,Bari
+2024-03-15 14:25:35.169000+00:00,54,gaia,mannarino,MNNGAI04R57C136R,gaiamannarino.0@libero.it,2004-10-17,TA,Castellaneta,Femmina,Italia,,via antonelli incalzi ,17,72017,brindisi,ostuni
+2024-03-15 14:26:40.074000+00:00,55,Vincenzo ,Montenegro ,MNTVCN05B02H096X,vivi.mon2005@gmail.com,2005-02-02,BA,Putignano,Maschio,Italia,,Via canonico indellicati ,65,70023,BA,Gioia del Colle
+2024-03-15 14:27:07.962000+00:00,56,Gaia,Attolico,TTLGAI05C43A662W,gagaattolico@gmail.com,2005-03-03,BA,Bari,Femmina,Italia,,Corso della carboneria ,67,70123,Bari,Bari
+2024-03-15 14:28:44.776000+00:00,57,Adriano,De Biasi,DBSDRN98D25C136L,adrianodbs98@gmail.com,1998-04-25,TA,Castellaneta,Maschio,Italia,,Via Giuseppe Parini,19,74013,Taranto,Ginosa
+2024-03-15 14:29:14.622000+00:00,58,Arianna ,Creatore,CRTRNN04C65A662L,CREATOREARIANNA@gmail.com,2004-03-25,BA,Bari,Femmina,Italia,,via magna grecia,1,70014,bari,conversano
+2024-03-15 14:30:33.198000+00:00,59,Giovanni ,Santamaria ,SNTGNN03H23A048C,santamariagiovanni71@gmail.com,2003-06-23,BA,Acquaviva delle Fonti,Maschio,Italia,,Via Ugo Foscolo ,19,70016,Bari ,Noicattaro 
+2024-03-15 14:30:35.297000+00:00,60,Giuseppe ,De Virgilio ,DVRGPP02R21D150E,pepppinoo02k@gmail.com,2002-10-21,CR,Cremona,Maschio,Italia,,Arco Alberto Mario ,6,70056,Bari,Molfetta 
+2024-03-15 14:30:40.128000+00:00,61,Nicolò ,Grandolfo,GRNNCL01C12H096W,nicograndolfo77@gmail.com,2001-03-12,BA,Putignano,Maschio,Italia,,Via montegrappa,10,70017,Bari,Putignano
+2024-03-15 14:31:12.601000+00:00,62,Valerio,Secondo,SCNVLR93T12C134E,Elise93@libero.it,1993-12-12,BA,Castellana Grotte,Maschio,Italia,,S.c Genna genna,14,70013,Bari,Castellana grotte 
+2024-03-15 14:31:40.591000+00:00,63,Paola,Lanave,LNVPLA05P70A662L,Sonosecchiona@gmail.com,2005-09-30,BA,Bari,Femmina,Italia,,Via de nittis 26 ,26,70126,Bari,Bari
+2024-03-15 14:32:14.528000+00:00,64,Mirea ,Marinelli ,MRNMRI99M52C134Z,marinellimirea@gmail.com,1999-08-12,BA,Castellana Grotte,Femmina,Italia,,Via da Bormida,45,70044,Bari,Polignano a Mare 
+2024-03-15 14:33:05.098000+00:00,65,Dorotea ,Sportelli ,SPRDRT00H64A662U,sportelli.4946@accademiabari.it,2000-06-24,BA,Bari,Femmina,Italia,,S.c. Foggia Dell'Albero ,15,70017,Bari,Putignano
+2024-03-15 14:33:30.419000+00:00,66,Daniele Cosimo ,Traisci,TRSDLC03R23D643Y,danieletraisci@icloud.com,2003-10-23,FG,Foggia,Maschio,Italia,,Bovio ,2,71048,Foggia,Stornarella
+2024-03-15 14:34:16.490000+00:00,67,Giulia ,Bombacigno ,BMBGLI07T58A662Y,giuliabombayscuola@gmail.com,2007-12-18,BA,Bari,Femmina,Italia,,via valenzano ,78,70010,BA,Capurso
+2024-03-15 14:35:04.716000+00:00,68,Daniele,Ninivaggi,NNVDNL01E14A662U,ninivaggidaniele@gmail.com,2001-05-14,BA,Bari,Maschio,Italia,,C.da Fra Diavolo/ Lotto 1,Int. 22,70020,Bari,Cassano delle Murge
+2024-03-15 14:35:47.486000+00:00,69,Asia,Tinaglia ,TNGSAI05B53A662J,asiatinaglia@icloud.com,2005-02-13,BA,Bari,Femmina,Italia,,Antonio Manuzzi ,43,70014,Bari,Conversano
+2024-03-15 14:36:12.753000+00:00,70,francesco ,Petrelli,PTRFNC03T30A048Z,francesco30pet@gmail.com,2003-12-30,BA,Acquaviva delle Fonti,Maschio,Italia,,Via Giacomo Matteotti ,83,70021,bari,Acquaviva delle fonti 
+2024-03-15 14:38:22.381000+00:00,71,Asia,Notarnicola ,NTRSAI02S51F376Y,asianotarnicolaa11@gmail.com,2002-11-11,BA,Monopoli,Femmina,Italia,,Largo forno romano ,11,70043,BA,Monopoli
+2024-03-15 14:41:12.538000+00:00,72,Dafne,Puppini,PPPDFN92L44H926F,dpuppini@gmail.com,1992-07-04,FG,San Giovanni Rotondo,Femmina,Italia,,Via Alfredo boniconti,4,70014,Bari,Conversano
+2024-03-15 14:41:18.497000+00:00,73,Emanuele,Pepe ,PPEMNL99B09D508A,emapepe99@gmail.com,1999-02-09,BR,Fasano,Maschio,Italia,,Via Vera Consoli,16,70043,Ba,Monopoli
+2024-03-15 14:51:28.894000+00:00,74,Giorgi ,Kokhreidze,KKHGRG03H04Z136S,Giokoxreidze3@gmail.com,2003-06-04,Georgia,Tskaltubo,Maschio,,საქართველო,Via giuseppe elefante ,6,70010,Bari,Turi
+2024-03-15 14:53:43.834000+00:00,75,Saverio ,Patruno ,PTRSVR99M06H096O,saveriopatruno@gmail.com,1999-08-06,BA,Putignano,Maschio,Italia,,Via adamo,79,70017,Bari ,Putignano 
+2024-03-15 14:54:12.026000+00:00,76,Vittoriano Francesco ,Morea,MROVTF00R18F915Z,francescomoreaa@icloud.com,2000-10-18,BA,Noci,Maschio,Italia,,Via Leonardo Da Vinci,31/B,70015,Bari,Noci
+2024-03-15 14:55:09.108000+00:00,77,Solange,d'Agnone,DGNFTM02R61Z602W,4ng3l.dust.17@gmail.com,2002-10-21,Santa Catarina,Campo ere,Femmina,,Brasil,Via Fiume,42,71122,Foggia,Foggia
+2024-03-15 14:58:41.921000+00:00,78,silvia ,maresca,MRSSLV01P62L049N,silvia.mare.2001@gmail.com,2001-09-22,TA,Taranto,Femmina,Italia,,via mecenate ,175,72100,brindisi ,brindisi 
+2024-03-15 15:00:42.912000+00:00,79,Maria Cristina ,Oi,OIXMCR05B66A048Z,martinamuccaa@gmail.com,2005-02-26,BA,Acquaviva delle Fonti,Femmina,Italia,,Via Antonio Segni,5,70020,Bari,Cassano delle Murge
+2024-03-15 15:11:23.585000+00:00,80,agostina,carella,CRLGTN04M54H096Y,agostinacarella0@gmail.com,2004-08-14,BA,Putignano,Femmina,Italia,,via Gottardo ,62,70023,bari,gioia del colle
+2024-03-15 15:13:39.996000+00:00,81,Dorotea,De Marco ,DMRDRT04L47H096P,doroteademarco994@gmail.com,2004-07-07,BA,Putignano,Femmina,Italia,,Via Ugo Bassi,19,70023,BA,Gioia Del Colle
+2024-03-15 15:16:00.077000+00:00,82,Martina,Sabatelli,SBTMTN03A65C134A,sabatelli36@gmail.com,2003-01-25,BA,Castellana Grotte,Femmina,Italia,,Via Nicola Pinto ,9,70013,BA,Castellana Grotte
+2024-03-15 15:16:03.467000+00:00,83,Letizia ,Tampone ,TMPLTZ00M58E885K,letiziatampone18@gmail.com,2000-08-18,FG,Manfredonia,Femmina,Italia,,via cala del fico,38,71043,Foggia,Manfredonia 
+2024-03-15 15:23:59.236000+00:00,84,Luca,Tesori,TSRLCU99R13A271E,elettrat.luca@gmail.com,1999-10-13,AN,Ancona,Maschio,Italia,,Via San Lorenzo,81,60020,Ancona,Sirolo
+2024-03-15 15:24:07.379000+00:00,85,Antonio,Cilli,CLLNTN90S01A669F,antoniocilli1990@gmail.com,1990-11-01,BA,Bari,Maschio,Italia,,Via nazario sauro ,26,76121,Bat,Barletta 
+2024-03-15 15:31:24.706000+00:00,86,Francesco ,Cibelli,CBLFNC96L23A662Z,cibelli96@hotmail.it,1996-07-23,BA,Bari,Maschio,Italia,,Via Magna Grecia ,81,70126,Bari,Bari
+2024-03-15 15:38:42.731000+00:00,87,Gregorio ,Menga,MNGGGR95H13A048D,Mengagregorio@gmail.com,1995-06-13,BA,Acquaviva delle Fonti,Maschio,Italia,,Borgo Fiorito ,3/A,70016,Bari ,Noicattaro 
+2024-03-15 15:41:42.338000+00:00,88,Giusy ,Centrone,CNTGSY03B53C975D,giusycentrone03@gmail.com,2003-02-13,BA,Conversano,Femmina,Italia,,via Francesco Petrarca ,11,70014,Bari,Conversano 
+2024-03-15 15:42:10.545000+00:00,89,Felisia,Angiulli,NGLFLS01C71C975K,felisiangiulli@gmail.com,2001-03-31,BA,Conversano,Femmina,Italia,,Via Renato Cartesio,16,70014,BA,Conversano
+2024-03-15 15:44:05.252000+00:00,90,Christian,Marchitelli,MRCCRS02M27C975V,christianmarchitelli95@gmail.com,2002-08-27,BA,Conversano,Maschio,Italia,,Via castellana ,133,70014,Bari,Conversano
+2024-03-15 15:44:25.017000+00:00,91,Miriana,Tansella,TNSMRN03R46A662Z,mirianatansella@icloud.com,2003-10-06,BA,Bari,Femmina,Italia,,Via Sandro Pertini ,66 D1,70019,Bari,Triggiano 
+2024-03-15 15:45:13.792000+00:00,92,Annarita,Vavalle,VVLNRT02P69L425N,annaritavavalle@yahoo.it,2002-09-29,BA,Triggiano,Maschio,Italia,,via duca carafa,19,70016,Bari,Noicattaro
+2024-03-15 15:48:19.023000+00:00,93,Paolo,Ammaturo ,MMTPLA05B04H096G,paolo7720@gmail.com,2005-02-04,BA,Putignano,Maschio,Italia,,Via Vecchia Matera,4/A,70023,Bari,Gioia del colle
+2024-03-15 15:48:52.328000+00:00,94,Rossella,Catanzaro,CTNRSL98E47A048L,ross.catanzaro2316@gmail.com,1998-05-07,BA,Acquaviva delle Fonti,Femmina,Italia,,Via prof. Susca,58,70010,Bari,Casamassima
+2024-03-15 15:49:21.133000+00:00,95,Desire’,Tirabassi,TRBDSR99T70H501F,Tirabassdesire@gmail.com,1998-12-30,RM,Roma,Femmina,Italia,,Via Vico primo polignano ,10,70014,Ba,Conversano 
+2024-03-15 16:02:50.308000+00:00,96,Francesco,Giannuzzi,GNNFNC95H03A048T,HIPHOPLIROY@gmail.com,1995-06-03,BA,Acquaviva delle Fonti,Maschio,Italia,,Via Francesco Cilea ,9,70020,Bari,Cassano delle Murge 
+2024-03-15 16:06:42.696000+00:00,97,Veronica ,Manchisi ,MNCVNC06A54H096D,veronicamanchisi06@gmail.com,2006-01-14,BA,Putignano,Femmina,Italia,,Via Vittorio Alfieri,8,70014,Bari,Conversano 
+2024-03-15 16:08:35.944000+00:00,98,Danilo,Corianó,CRNDNL87B01I119C,danilocoriano123@libero.it,1987-02-01,BR,San Pietro Vernotico,Maschio,Italia,,Lacalandra,20/Q,70014,BA,Conversano
+2024-03-15 16:10:07.826000+00:00,99,Maria Teresa ,Benedetto,BNDMTR98P57I330G,mariateresabenedetto@libero.it,1998-09-17,BA,Santeramo in Colle,Femmina,Italia,,Corso Italia ,256,70029,Bari ,Santeramo 
+2024-03-15 16:11:08.041000+00:00,100,Giuseppe,Vasco,VSCGPP99H26H096X,saveriopatruno@gmail.com,1999-06-26,BA,Putignano,Maschio,Italia,,Via osteria,12,70017,Bari ,Putignano 
+2024-03-15 16:13:50.372000+00:00,101,Federica ,Indellicati ,NDLFRC01P48C134G,fede.indellicati@gmail.com,2001-09-08,BA,Castellana Grotte,Femmina,Italia,,Antonio de Curtis,14/c,70023,Bari,Gioia del colle
+2024-03-15 16:15:57.169000+00:00,102,Giuseppe ,Giampetruzzi ,GMPGPP02L15E038Y,peppegiampe@gmail.com,2002-07-15,BA,Gioia del Colle,Maschio,Italia,,via luigi einaudi ,23,70028,bari,santeramo in colle
+2024-03-15 16:34:37.084000+00:00,103,Ruggiero,Deluca,DLCRGR97B10L840H,Ruggiero.deluca.97@gmail.com,1997-02-10,VI,Vicenza,Maschio,Italia,,Via del gelso ,32,76121,Bt,Barletta
+2024-03-15 16:39:49.564000+00:00,104,Sara ,Rampollo ,RMPSRA01M48C424K,Sara_2001_2018@libero.it,2001-08-08,BR,Ceglie Messapica,Femmina,Italia,,Via catullo ,11/B,72013,Brindisi ,Ceglie Messapica 
+2024-03-15 16:41:04.243000+00:00,105,Francesca ,Ivone,VNIFNC94M45C134N,francescaivone94@gmail.com,1994-08-05,BA,Castellana Grotte,Femmina,Italia,,Persio Oronzo ,3,70013,BA,Castellana Grotte 
+2024-03-15 16:42:11.060000+00:00,106,Alessandro ,Laselva ,LSLLSN00R11H096A,Ale.laselva00@gmail.com,2000-10-11,BA,Putignano,Maschio,Italia,,Via XXV Luglio,24,70014,Bari,Conversano 
+2024-03-15 16:46:02.214000+00:00,107,Eloisa,Tuccillo,TCCLSE02R41A048J,Eloisatuccillo02@gmail.com,2002-10-01,BA,Acquaviva delle Fonti,Femmina,Italia,,Via catapano ,7,70023,Gioia del colle,Gioia del colle
+2024-03-15 17:04:15.468000+00:00,108,Julian ,Pajo,PJAJLN02R28A662T,julian.pajo@gmail.com,2002-10-28,BA,Bari,Maschio,Italia,,Via Vassallo 18,18,70125,Bari,Bari
+2024-03-15 17:10:35.540000+00:00,109,Giovanna ,Angiulli ,NGLGNN01C71C975W,giovannangiulli@gmail.com,2001-03-31,BA,Conversano,Femmina,Italia,,Via Renato Cartesio ,16 ,70014,Bari ,Conversano 
+2024-03-15 17:30:54.135000+00:00,110,Francesco ,Leronni,LRNFNC01S30H096O,francescoleronny3011@gmail.com,2001-11-30,BA,Putignano,Maschio,Italia,,Via Giuseppe Saragat ,4H,70023,Bari ,Gioia del colle 
+2024-03-15 17:35:39.400000+00:00,111,Simone,Iacoella,CLLSMN03P23A048F,simoneiacoella45@gmail.com,2003-09-23,BA,Acquaviva delle Fonti,Maschio,Italia,,Via Giorgio Almirante ,3,70021,Bari,Acquaviva delle fonti
+2024-03-15 17:36:17.529000+00:00,112,Davide ,Martinelli,MRTDVD97T07C975L,davidemt97@gmail.com,1997-12-07,BA,Conversano,Maschio,Italia,,via paolo Antonio di Tarsia,67,70014,Bari,Conversano
+2024-03-15 17:37:59.734000+00:00,113,Angelomichele,Petrosillo,PTRNLM93T30F376F,Abnormalbj@gmail.com,1993-12-30,BA,Monopoli,Maschio,Italia,,Louis Braille,35,70043,Bari,Monopoli
+2024-03-15 17:40:23.282000+00:00,114,Cristian,Fraddosio,FRDCST01B01A662U,Cristianfraddosio01@gmail.com,2000-01-01,BA,Bari,Maschio,Italia,,Antonio de curtis,7,70131,Bari,Bari
+2024-03-15 17:40:37.877000+00:00,115,Francesco,Ficarella,FRCFNC03H18A662N,Francyplay4@gmail.com,2003-06-18,BA,Bari,Maschio,Italia,,Viale Gennaro trisorio liuzzi,95,70129,Bari,Bari
+2024-03-15 17:47:30.686000+00:00,116,Luis Enrique ,Gutierrez ,GTRLNR99E04Z614G,gutierrezluisenrique4@gmail.com,1999-05-04,BA,Acquaviva delle Fonti,Maschio,Italia,,Via Italia,22,70014,Bari,Conversano 
+2024-03-15 17:49:03.214000+00:00,117,Massimiliano ,Fiore,FRIMSM97H20A662D,Maxi9711@live.it,1997-06-20,BA,Bari,Maschio,Italia,,Via skanderbeg,9,70124,Bari,Bari
+2024-03-15 17:50:54.149000+00:00,118,Fabrizio,Montrano ,MNTFRZ86A19D643E,sgamone86@gmail.com,1986-01-19,FG,Foggia,Maschio,Italia,,Via p graziani,15,71121,Foggia,Foggia
+2024-03-15 17:53:22.759000+00:00,119,Giuseppe,Losito,LSTGPP02S11H096E,lositogiuseppe472@gmail.com,2002-11-11,BA,Putignano,Maschio,Italia,,strada sammichele,53/A,70010,Bari,Turi
+2024-03-15 17:56:30.862000+00:00,120,michela,lorusso,LRSMHL05C52C134E,michelalorusso05@gmail.com,2005-03-12,BA,Castellana Grotte,Femmina,Italia,,via milano ,6,70014,Bari,conversano
+2024-03-15 17:59:15.438000+00:00,121,Michelangelo ,Savino,SVNMHL00D14H096N,savinomichelangelo@gmail.com,2000-04-14,BA,Putignano,Maschio,Italia,,Via Minunni,12,70014,Bari,Conversano
+2024-03-15 17:59:18.316000+00:00,122,Vincenzo,Pinto,PNTVCN02D01A048Z,vincenzop.02@gmail.com,2002-04-01,BA,Acquaviva delle Fonti,Maschio,Italia,,Via Galileo Galilei,29,70021,Bari,Acquaviva delle Fonti
+2024-03-15 17:59:20.434000+00:00,123,Federico,De marco,DMRFRC00L05A048G,Federicocm146@gmail.com,2000-07-05,BA,Acquaviva delle Fonti,Maschio,Italia,,Verdi,6,74019,Taranto,Palagiano 
+2024-03-15 18:00:53.958000+00:00,124,Patricia,Malaj,MLJPRC02E53E038W,patriciamalaj@gmail.com,2002-05-13,BA,Gioia del Colle,Femmina,Italia,,Via Cavour,1/A,70023,Bari,Gioia del Colle
+2024-03-15 18:07:46.485000+00:00,125,Berardino ,Damato ,DMTBRD98R31C975Y,berardino.damato@gmail.com,1998-10-31,BA,Conversano,Maschio,Italia,,Via Italia ,N4,70018,Bari,Rutigliano 
+2024-03-15 18:09:23.979000+00:00,126,Mirco,Vitale,VTLMRC01D13A048S,Mircovitale102@gmail.com,2001-04-13,BA,Acquaviva delle Fonti,Maschio,Italia,,Via borgo incoronata ,23,70020,Bari,Cassano delle murge 
+2024-03-15 18:24:20.212000+00:00,127,Carlo,Angeloni,NGLCRL03H11A662V,fercarloangeloni@gmail.com,2003-06-11,BA,Bari,Maschio,Italia,,Via Bitritto ,131,70124,Bari,Bari
+2024-03-15 18:25:53.377000+00:00,128,Gianluigi ,Castellano,CSTGLG03E20A048P,gianluigi.cast@gmail.com,2003-05-20,BA,Acquaviva delle Fonti,Maschio,Italia,,Piazza XX settembre ,18,70023,Bari,Gioia del Colle
+2024-03-15 18:35:50.640000+00:00,129,Daniele ,Pace,PCADNL05M06H096H,danielepace376@gmail.com,2005-08-06,BA,Putignano,Maschio,Italia,,via italia,28,70014,bari,conversano 
+2024-03-15 18:36:54.172000+00:00,130,Oscar Vito,Silvestri,SLVSRV98P30C983Y,oscarvito34@gmail.com,1998-09-30,BA,Corato,Maschio,Italia,,Traversa Via Nazionale 3bis ,27,70128,Bari,Bari
+2024-03-15 18:37:44.154000+00:00,131,Antonio,Tamborrino,TMBNTN01B25B180P,lorenza.barnaba@alice.it,2001-02-25,BR,Brindisi,Maschio,Italia,,John Kennedy,43,72012,Brindisi,Carovigno
+2024-03-15 18:39:47.465000+00:00,132,Desirée,Notarnicola,NTRDSR93T62C134M,notarnicoladesiree@gmail.com,1993-12-22,BA,Castellana Grotte,Femmina,Italia,,Via Margherita di Savoia,11,70013,Bari,Castellana Grotte
+2024-03-15 18:40:52.266000+00:00,133,Gabriele,Colucci,CLCGRL03S13A662S,gabricolucci13@gmail.com,2003-11-13,BA,Bari,Maschio,Italia,,Via Giulio Pastore,1/H,70125,Bari,Bari
+2024-03-15 18:40:54.058000+00:00,134,Rita,Bianco,BNCRTI99M50F052X,biancorita1089@gmail.com,1999-08-10,MT,Matera,Femmina,Italia,,Via Emanuele Manicone ,14c,75100,Matera ,Matera
+2024-03-15 18:46:32.585000+00:00,135,Paolo,Mastrangelo ,MSTPLA05A27A048P,Mastrangelopaolo4@gmail.com,2005-01-27,BA,Acquaviva delle Fonti,Maschio,Italia,,Via vicinale capone 2771/b,2771,70023,Bari ,Gioia del colle 
+2024-03-15 18:47:18.690000+00:00,136,Francesco ,Lascaro ,LSCFNC01S25FO52V,lascaroofrancesco@gmail.com,2001-11-25,MT,Matera,Maschio,Italia,,Recinto cappuccini ,6,75100,Matera,Matera
+2024-03-15 18:51:14.166000+00:00,137,Antonio ,Losito,LSTNTN99M29A669H,xxaiiirlowxx@libero.it,1999-08-29,BA,Bari,Maschio,Italia,,Via della perdizione ,9,76121,Barletta,Barletta
+2024-03-15 18:59:11.169000+00:00,138,Viviana,Iacovelli ,CVLVVN98H59F915E,iacovelliviviana9@gmail.com,1998-06-19,BA,Noci,Femmina,Italia,,Ciao Alessandro Manzoni ,6/c,70017,Bari,Putignano 
+2024-03-15 19:05:00.774000+00:00,139,Simone,Albanese,LBNSMN02B08A893B,simone.polpetta@gmail.com,2002-02-08,BA,Bitonto,Maschio,Italia,,Via Umberto Terracini ,13,70023,Bari,Gioia Del Colle
+2024-03-15 19:05:03.284000+00:00,140,Bianca Elena,Buga,BGUBCL03B51Z129S,biancaelenabuga@gmail.com,2003-02-11,Romania,Bacau,Femmina,,România,Via Zara,15,70011,Puglia,Alberobello
+2024-03-15 19:19:56.138000+00:00,141,Francesco ,Scannicchio ,SCNFNC03P30A662U,francescoscannicchio@yahoo.com,2003-09-30,BA,Bari,Maschio,Italia,,Via bari,Snc,70054,Ba,Giovinazzo 
+2024-03-15 19:20:42.606000+00:00,142,Valentina,Martimucci,MRTVNT01B67H096K,Valentinamartimucci27@gmail.com,2001-02-27,BA,Putignano,Femmina,Italia,,Via Roberto Rossellini,30,70023,Bari,Gioia del Colle 
+2024-03-15 19:27:49.688000+00:00,143,Mariano,Sassanelli ,SSSMRN00M14L049L,marianosassanelli@gmail.com,2000-08-14,TA,Taranto,Maschio,Italia,,Via Cesare Battisti,77,74121,Taranto ,Taranto 
+2024-03-15 19:37:13.262000+00:00,144,Francesco,Chiarappa,CHRFNC00B20A662Z,chiarappa.francesco20@gmail.com,2000-02-20,BA,Bari,Maschio,Italia,,Via dei peuceti,50,70010,Bari,Turi
+2024-03-15 20:01:09.945000+00:00,145,Giuseppe ,Selicato,SLCGPP93S12F376Z,peppe.minimale@gmail.com,1993-11-12,BA,Monopoli,Maschio,Italia,,Contrada santa Lucia ,204,70043,Bari,Monopoli
+2024-03-15 20:10:37.590000+00:00,146,Stefano ,Arboletto,RBLSFN02S04D643G,Stefanoarboletto@gmail.com,2002-11-04,FG,Foggia,Maschio,Italia,,Via Luigi Miranda,9,71122,Foggia,Foggia
+2024-03-15 20:13:24.761000+00:00,147,Nico,Lamparelli ,LMPNCI95B11H096A,nicolamparelli1995@gmail.com,1995-02-11,BA,Putignano,Maschio,Italia,,Via Mola,107,70018,Bari,Rutigliano 
+2024-03-15 20:33:30.278000+00:00,148,Giusy,Centrone ,CNTGSY03B53C975D,giusycentrone03@gmail.com,2003-02-13,BA,Conversano,Femmina,Italia,,Via Francesco Petrarca ,11,70014,Bari,Conversano 
+2024-03-15 20:40:26.647000+00:00,149,Guia,Arrivo ,RRVGUI03E71F376P,arrivoguga2003@gmail.com,2003-05-31,BA,Monopoli,Femmina,Italia,,Via zingari,91,70014,Bari,Conversano
+2024-03-15 20:47:52.558000+00:00,150,Mattia,Radogna,RDGMTT04E27A048Y,mattiaradogna71@gmail.com,2004-05-27,BA,Acquaviva delle Fonti,Non specificato,Italia,,Via del pesco ,19/A,70018,Bari,Rutigliano
+2024-03-15 21:07:13.597000+00:00,151,Domenico ,Talienti ,TLNDNC03H14H096D,domenicotalienti@gmail.com,2003-06-14,BA,Putignano,Maschio,Italia,,Via Galliano 50 ,50,70018,Bari,Rutigliano 
+2024-03-15 21:09:13.306000+00:00,152,Roger Mauricio ,Locorotondo ,LCRRRM00E04Z604P,r.loco2000@gmail.com,2000-05-04,BA,Acquaviva delle Fonti,Maschio,Italia,,Via Piave,99,74012,Taranto ,Crispiano 
