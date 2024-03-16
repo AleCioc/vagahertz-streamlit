@@ -72,7 +72,7 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
             "registration_timestamp_utc", ascending=True
         ).set_index("registration_timestamp_utc", drop=True)
         users_df_to_show
-        users_df_to_show.to_csv("users_df_to_show.csv")
+        users_df_to_show.to_csv(os.path.join(root_data_path, "users_df_to_show.csv"))
 
     st.header("Pagamento tessera")
 

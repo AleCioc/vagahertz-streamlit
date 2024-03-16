@@ -136,7 +136,7 @@ if selected_country == "Italy":
     italy_province_cities_list = sorted(italy_cities_names_df.loc[
         italy_cities_names_df["Sigla automobilistica"] == provincia_di_nascita,
         "Denominazione in italiano"
-    ].values)
+    ].astype(str).values)
 
     comune_di_nascita = cols[1].selectbox(
         'Comune di nascita', options=italy_province_cities_list
