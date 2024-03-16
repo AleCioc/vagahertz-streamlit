@@ -327,6 +327,8 @@ with st.form("user_registration_form"):
                         storage_client
                     )
 
+
+
                     qrcode_user = qrcode.make(user_code)
                     qrcode_user.save(os.path.join(unique_users_qrcode_path, user_code + ".png"))
 
@@ -336,6 +338,8 @@ with st.form("user_registration_form"):
                         "unique_users_qrcode/" + user_code + ".png",
                         storage_client
                     )
+
+
 
                     user_current_event_check_url = "https://nonsolotechno-check.streamlit.app?user_code=" + user_code
                     qrcode_user_current_event = qrcode.make(user_current_event_check_url)

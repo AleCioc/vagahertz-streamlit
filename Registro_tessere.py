@@ -94,6 +94,7 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
         "events_access/non-solo-techno_2024-03-16/",
         storage_client
     )
+
     if not len(users_df):
         users_df = pd.DataFrame(columns=["user_code"])
 

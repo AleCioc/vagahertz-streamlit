@@ -10,7 +10,7 @@ text_input_container = st.empty()
 
 st.session_state["passkey"] = text_input_container.text_input("Inserire passkey", label_visibility="hidden", type="password")
 
-if st.session_state["passkey"] == st.secrets["PASSKEY"]:
+if True:
 
     if "user_code" in st.query_params:
 

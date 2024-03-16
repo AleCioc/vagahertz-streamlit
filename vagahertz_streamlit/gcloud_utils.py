@@ -99,7 +99,7 @@ def create_users_df_from_json_files(bucket_name, folder_name, storage_client):
     json_data_list = []
     for blob in blobs:
         if blob.name.endswith('.json'):
-            local_file_path = os.path.join(root_data_path, "temp.json")
+            local_file_path = os.path.join(root_data_path, "blob.name.json")
             download_blob(bucket_name, blob.name, local_file_path, storage_client)
             with open(local_file_path, 'r') as json_file:
                 json_data = json.load(json_file)
