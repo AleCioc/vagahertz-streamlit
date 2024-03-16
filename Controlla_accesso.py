@@ -6,9 +6,9 @@ st.set_page_config(page_title="Controlla accesso")
 
 st.title('Controllo Accessi')
 
-text_input_container = st.empty()
+# text_input_container = st.empty()
 
-st.session_state["passkey"] = text_input_container.text_input("Inserire passkey", label_visibility="hidden", type="password")
+# st.session_state["passkey"] = text_input_container.text_input("Inserire passkey", label_visibility="hidden", type="password")
 
 if True:
 
