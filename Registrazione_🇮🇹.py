@@ -99,16 +99,12 @@ st.markdown(
 st.header("Dati anagrafici")
 
 cols = st.columns((1, 1), gap="small")
-
 nome = cols[0].text_input('Nome')
 cognome = cols[1].text_input('Cognome')
+
+cols = st.columns((1, 1), gap="small")
 sesso_di_nascita = cols[0].selectbox(
-    'Sesso di nascita', ['Maschio', 'Femmina', 'Non specificato']
-)
-data_di_nascita = cols[1].date_input(
-    'Data di nascita',
-    min_value=datetime.date(1900, 1, 1),
-    value=datetime.date(2000, 1, 1)
+    'Sesso di nascita', ['Maschio', 'Femmina', 'Non specificato'], index=2
 )
 
 import pycountry
@@ -119,19 +115,29 @@ from fuzzywuzzy import fuzz
 countries = [country.name for country in pycountry.countries]
 
 # Creating a select box widget for country selection
-selected_country = cols[0].selectbox('Nazionalità:', countries, index=countries.index("Italy"))
+selected_country = cols[1].selectbox('Nazionalità:', countries, index=countries.index("Italy"))
 
 cols = st.columns((1, 1), gap="small")
 
-if selected_country == "Italy":
+data_di_nascita = cols[0].date_input(
+    'Data di nascita',
+    min_value=datetime.date(1900, 1, 1),
+    value=datetime.date(2000, 1, 1)
+)
+
+selected_country_birth = cols[1].selectbox('Nazione di nascita:', countries, index=countries.index("Italy"))
+
+if selected_country_birth == "Italy":
 
     provinces_df = read_provinces()
     provinces_list = sorted(provinces_df.Codice.dropna().values)
 
     italy_cities_names_df = read_excel_cities()
 
+    cols = st.columns((1, 1), gap="small")
+
     provincia_di_nascita = cols[0].selectbox(
-        'Provincia di nascita', options=provinces_list, index=9
+        'Provincia di nascita', options=sorted(italy_cities_names_df["Sigla automobilistica"].dropna().unique()), index=9
     )
     italy_province_cities_list = sorted(italy_cities_names_df.loc[
         italy_cities_names_df["Sigla automobilistica"] == provincia_di_nascita,
@@ -141,6 +147,8 @@ if selected_country == "Italy":
     comune_di_nascita = cols[1].selectbox(
         'Comune di nascita', options=italy_province_cities_list
     )
+
+    cols = st.columns((1, 1), gap="small")
 
     codice_fiscale_inserito = cols[0].text_input('Codice fiscale')
 
@@ -338,8 +346,6 @@ with st.form("user_registration_form"):
                         "unique_users_qrcode/" + user_code + ".png",
                         storage_client
                     )
-
-
 
                     user_current_event_check_url = "https://nonsolotechno-check.streamlit.app?user_code=" + user_code
                     qrcode_user_current_event = qrcode.make(user_current_event_check_url)

@@ -23,24 +23,27 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
         "unique_users_json",
         storage_client
     )
-    users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) == 2), "nazione_di_nascita_auto"] = "Italia"
 
-    from geopy.geocoders import Nominatim
+    #users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) == 2), "nazione_di_nascita_auto"] = "Italia"
 
-    def get_country_from_city(city):
-        time.sleep(1)
-        geolocator = Nominatim(user_agent="vagahertz-0")
-        location = geolocator.geocode(city, addressdetails=True)
+    #from geopy.geocoders import Nominatim
 
-        if location and 'address' in location.raw and 'country' in location.raw['address']:
-            return location.raw['address']['country']
-        else:
-            return "Country not found or ambiguous city name provided."
+    # def get_country_from_city(city):
+    #     time.sleep(1)
+    #     geolocator = Nominatim(user_agent="vagahertz-0")
+    #     location = geolocator.geocode(city, addressdetails=True)
+    #
+    #     if location and 'address' in location.raw and 'country' in location.raw['address']:
+    #         return location.raw['address']['country']
+    #     else:
+    #         return "Country not found or ambiguous city name provided."
 
-    users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) > 2), "nazione_di_nascita_auto"] = \
-        users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) > 2), "luogo_di_nascita"].apply(
-            get_country_from_city
-        )
+    # users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) > 2), "nazione_di_nascita_auto"] = \
+    #     users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) > 2), "luogo_di_nascita"].apply(
+    #         get_country_from_city
+    #     )
+
+    users_df
 
     users_df["codice_fiscale_sistema"] = users_df.codice_fiscale
     users_df["email_sistema"] = users_df.email
@@ -89,17 +92,17 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
         storage_client
     )
 
-    users_df = create_users_df_from_json_files(
-        "vagahertz",
-        "events_access/non-solo-techno_2024-03-16/",
-        storage_client
-    )
-
-    if not len(users_df):
-        users_df = pd.DataFrame(columns=["user_code"])
-
-    st.subheader("Lista ingressi")
-    with st.expander("Clicca per visualizzare ingressi"):
-        users_df
+    # users_df = create_users_df_from_json_files(
+    #     "vagahertz",
+    #     "events_access/non-solo-techno_2024-03-16/",
+    #     storage_client
+    # )
+    #
+    # if not len(users_df):
+    #     users_df = pd.DataFrame(columns=["user_code"])
+    #
+    # st.subheader("Lista ingressi")
+    # with st.expander("Clicca per visualizzare ingressi"):
+    #     users_df
 else:
     st.error("Non hai i permessi per consultare il registro!")

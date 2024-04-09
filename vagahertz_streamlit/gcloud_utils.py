@@ -98,14 +98,20 @@ def create_users_df_from_json_files(bucket_name, folder_name, storage_client):
     blobs = list_blobs(bucket_name, folder_name, storage_client)
     json_data_list = []
     for blob in blobs:
+        local_file_path = os.path.join(root_data_path, blob.name)
         if blob.name.endswith('.json'):
-            local_file_path = os.path.join(root_data_path, "blob.name.json")
-            download_blob(bucket_name, blob.name, local_file_path, storage_client)
-            with open(local_file_path, 'r') as json_file:
-                json_data = json.load(json_file)
-                json_data["registration_timestamp_utc"] = blob.time_created
-                json_data_list.append(json_data)
-            os.remove(local_file_path)
+            if not os.path.exists(local_file_path):
+                download_blob(bucket_name, blob.name, local_file_path, storage_client)
+                with open(local_file_path, 'r') as json_file:
+                    json_data = json.load(json_file)
+                    json_data["registration_timestamp_utc"] = blob.time_created
+                    json_data_list.append(json_data)
+            else:
+                with open(local_file_path, 'r') as json_file:
+                    json_data = json.load(json_file)
+                    json_data["registration_timestamp_utc"] = blob.time_created
+                    json_data_list.append(json_data)
+                    # os.remove(local_file_path)
     df = pd.DataFrame(json_data_list)
     return df
 
@@ -122,8 +128,6 @@ def read_user_event_qrcode(bucket_name, folder_name, blob_name, storage_client):
             os.remove(local_file_path)
     df = pd.DataFrame(json_data_list)
     return df
-
-
 
 
 def read_csv_from_gcs_private_bucket(storage_client, bucket_name, object_name):
