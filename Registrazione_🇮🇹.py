@@ -335,8 +335,6 @@ with st.form("user_registration_form"):
                         storage_client
                     )
 
-
-
                     qrcode_user = qrcode.make(user_code)
                     qrcode_user.save(os.path.join(unique_users_qrcode_path, user_code + ".png"))
 

@@ -23,6 +23,8 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
         "unique_users_json",
         storage_client
     )
+    users_df.nome = users_df.nome.apply(lambda s: s.strip())
+    users_df = users_df.sort_values("nome").reset_index(drop=True)
 
     #users_df.loc[users_df.provincia_di_nascita.apply(lambda s: len(s) == 2), "nazione_di_nascita_auto"] = "Italia"
 
@@ -43,6 +45,7 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
     #         get_country_from_city
     #     )
 
+
     users_df
 
     users_df["codice_fiscale_sistema"] = users_df.codice_fiscale
@@ -54,14 +57,14 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
         "users_df.csv",
         storage_client
     )
-    users_df = users_df.sort_values(
-        "registration_timestamp_utc", ascending=True
-    )
+    # users_df = users_df.sort_values(
+    #     "registration_timestamp_utc", ascending=True
+    # )
     users_df["sequenziale_tessera"] = range(len(users_df))
     users_df["sequenziale_tessera"] = users_df["sequenziale_tessera"] + 1
 
     with st.expander("Guarda registro completo"):
-        # users_df
+
         users_df_to_show = users_df[[
             "registration_timestamp_utc",
             "sequenziale_tessera",
@@ -74,35 +77,18 @@ if st.session_state["passkey"] == st.secrets["PASSKEY"]:
         ]].sort_values(
             "registration_timestamp_utc", ascending=True
         ).set_index("registration_timestamp_utc", drop=True)
+
         users_df_to_show
         users_df_to_show.to_csv(os.path.join(root_data_path, "users_df_to_show.csv"))
 
-    st.header("Pagamento tessera")
+        users_df_to_print = users_df[[
+            "nome",
+            "cognome",
+            "data_di_nascita",
+            "codice_fiscale_sistema",
+        ]].sort_values("nome").reset_index(drop=True)
+        users_df_to_print.columns = ["Nome", "Cognome", "Data di nascita", "Codice fiscale"]
+        # users_df_to_print.to_csv("users_df_to_print.csv")
 
-    st.subheader("Convalidare il QR code per Non Solo Techno DOPO che il pagamento tessera + evento è stato effettuato!")
-
-    st.header("Non Solo Techno")
-
-    storage_client = initialize_storage_client(store_json_key_from_env())
-    blobs = storage_client.list_blobs("vagahertz")
-
-    blobs = list_blobs(
-        "vagahertz",
-        "events_access/non-solo-techno_2024-03-16/",
-        storage_client
-    )
-
-    # users_df = create_users_df_from_json_files(
-    #     "vagahertz",
-    #     "events_access/non-solo-techno_2024-03-16/",
-    #     storage_client
-    # )
-    #
-    # if not len(users_df):
-    #     users_df = pd.DataFrame(columns=["user_code"])
-    #
-    # st.subheader("Lista ingressi")
-    # with st.expander("Clicca per visualizzare ingressi"):
-    #     users_df
 else:
     st.error("Non hai i permessi per consultare il registro!")
